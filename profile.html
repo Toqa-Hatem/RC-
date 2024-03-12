@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  
+</head>
+<body><header>
+      <nav>
+        <P class="logo" >R<span class="c">C</span></P>
+        <div class="navs">
+          <ul>
+              <li> <a href="home .html"> Home</a> </li>
+              <li> <a href="review.html"> Review</a> </li>
+              <li> <a href="comp.html"> Complaint</a> </li>
+              <li><a href="#"> Comparison </a></li>
+              <li> <a href="contactus.html"> Contact Us</a> </li>
+              <li> <a href="login.html">Log In</a> </li>
+              <li> <a href="sign.html"><span class="material-icons-outlined"> logout </span></i></a> </li>
+          </ul>
+        </div>
+      </nav>
+      <img src="account.png" width="170px" height="170px" >
+      <div class="triangle">
+          <h2> USER NAME</h2> <br>
+          <div class="data">
+             <ul>
+               <li>  <p> Points:  </p> <span>100  </span> </li>
+               <li> <p> Email: </p>  <span> Randamohamed@gmail.com</span> </li>
+               <li> <p>Address: </p> <span> 10st,maadi </span> </li>
+                <li><p> Phone Number:</p> <span>01119253539 </span> </li>
+           </ul>
+          </div>
+          <input  class="but" type="submit" value="Edit" onclick="openPopup3()">
+      </div>
+      <div class="right" >
+        <div class="R">
+          <p >YOUR REVIEWS</p>
+        </div>
+<div class="stars1" >
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+</div>
+          <button  class="btn_rev" type="button" name="review" onclick="openPopup()" >show</button>
+         <hr class="horizontal-tap1">    <hr class="horizontal-tap2">
+         <hr class="horizontal-tap3">    
+        <div class="C">
+          <p >YOUR COMPLAINTS</p>
+        </div>
+<div class="stars2" >
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          </div>
+
+          <button class="btn_com" type="button" name="complain" onclick="openPopup2()" >show</button>
+        </div>
+
+     <div class="popup" id="popup">
+        <h1>Your Reviews </h1>
+
+        <img id="img1" src="icons8.jpg" width="50px height50px">
+        <div class="rev1">
+            <p>noon app gives me the best shopping experience ever </p>
+        </div>
+        <img id="img2" src="icons9.jpg" width="50px height50px">
+        
+        <div class="rev2">
+            <p>Amazon gives me a perfect chance to shop online</p>
+        </div>
+        <img id="img3" src="icons10.jpg" width="50px height50px">
+        <div class="rev3">
+            <p>I have a bad experience with defacto application .. it`s service isnot perfect.</p>
+        </div>
+        <button  type="button" onclick="closePopup()" >Close</button>
+    </div>
+    <div class="popup2" id="popup2">
+      <h1>Your Complaints</h1>
+
+      <img id="img1" src="icons8.jpg" width="50px height50px">
+      <div class="rev1">
+          <p>I have a bad experience with Noon application .. it`s service isn't perfect. I bought a laptop from noon, and when I received it ,
+             I discovered that it was broken and tried to communicate with them more than once,
+              but it was difficult to communicate with them, 
+              So I need you to replace this laptop or get my money back. </p>
+      </div>
+
+      <img id="img2" src="icons9.jpg" width="50px height50px">
+      <div class="rev2">
+        <p>I have a bad experience with Noon application .. it`s service isn't perfect. I bought a laptop from noon, and when I received it ,
+            I discovered that it was broken and tried to communicate with them more than once,
+             but it was difficult to communicate with them, 
+             So I need you to replace this laptop or get my money back. </p>
+      </div>
+      <button  type="button" onclick="closePopup2()" >Close</button>
+    </div>
+    
+    <div class="popup3" id="popup3">
+      <ul>
+      <li><label class="nusername" for="nusername"> New User Name </label>   <input type="text" id="nusername" name="nusername" placeholder="enter your new name"> <input type="submit" class="but1" value="Save"> </li>
+      <li> <label class="nmail" for="nmail"> New Email </label>  <input type="email" id="nmail" name="nmail"  placeholder="enter your new email">  <input type="submit" class="but2" value="Save"> </li>
+      <li><label class="nadd" for="nadd"> New Address </label>  <input type="text" id="nadd" name="nadd" placeholder="enter your new Address">   <input type="submit" class="but3" value="Save">  </li>
+      <li><label class="nphone" for="nphone"> New Phone Number </label>  <input type="tel" id="nphone" name="nphone"  placeholder="enter your new phone number">   <input type="submit" class="but4" value="Save"> </li>
+    </ul>
+
+      <button  type="button" onclick="closePopup3()" >Close</button>
+    </div>
+<footer>
+      <div class="footer">
+        
+        <div class="col1">
+          <h3>Services :</h3>
+         <a href="review.html"> <h4>Review</h4></a>
+         <a href="comp.html">  <h4>Complaint</h4></a>
+         <a href="#">  <h4>Comparison</h4></a>
+          
+          <h4>Electronic Points</h4>
+        </div>
+
+        <div class="col2"> 
+          <h3>Contact info :</h3>
+        <a href="mailto:rcyoucarewerate@gmail.com">  <h4>rcyoucarewerate@gmail.com</h4></a>
+          <a href="tel:+02 01128872210"><h4>tel :+02 01128872210</h4></a>
+        </div>
+
+        <div class="col3">
+          <h3>Social :</h3>
+          <a href="https://www.facebook.com/profile.php?id=100091461590240&mibextid=ZbWKwL"><h4>Facebook</h4></a>
+          <a href="https://instagram.com/ratecomplaint?igshid=ZDdkNTZiNTM="> <h4>Instagram</h4></a>
+          <a href="https://twitter.com/RC4639544536748?t=mGxuJVHTmzi0Q5SjBZXDhQ&s=09"><h4>Twitter</h4></a>
+          <a href="https://www.linkedin.com/in/rate-care-766762269"><h4>Linkedin</h4></a>
+        </div>
+        <div class="col4">
+          <h3>MY Account :</h3>
+         <a href="sign.html"> <h4>SignIn/Register</h4></a>
+          <a href="profile.html"><h4>My Reviews</h4></a>
+        <a href="profile.html"><h4>My Complaints</h4></a>
+         <a href="profile.html"> <h4>My points</h4></a>
+        </div>
+      </div>
+      <hr class="hr2" />
+      <h4 class="copy">&copy;Created by BIS 2023 Seniors Team</h4>
+    </footer>
+<script>
+  let popup  = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+  let popup2  = document.getElementById("popup2");
+  function openPopup2(){
+    popup2.classList.add("open-popup2");
+  }
+  function closePopup2(){
+    popup2.classList.remove("open-popup2");
+  }
+  let popup3  = document.getElementById("popup3");
+  function openPopup3(){
+    popup3.classList.add("open-popup3");
+  
+  }
+  function closePopup3(){
+    popup3.classList.remove("open-popup3");
+  }
+  </script>
+</body>
+</html>

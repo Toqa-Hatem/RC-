@@ -1,0 +1,527 @@
+body {
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  background-size: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, black, #e6b106);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #e6b106, black);
+}
+nav {
+  display: flex;
+  font-family: 'system-ui', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 75px;
+}
+nav img {
+  margin-left: 50px;
+
+  width: 120px;
+}
+.navs {
+  flex: 1;
+  text-align: right;
+  margin-right: 3%;
+}
+.navs ul li:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.navs ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 3px 12px;
+  transition: 1s;
+  font-weight: bold;
+}
+
+.navs ul li a {
+  text-decoration: none;
+  font-size: 20px;
+
+  color: black;
+  font-weight: 400px;
+}
+.navs ul li a .fas {
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.navs ul li a:hover {
+  color: #e6b106;
+}
+
+.logo {
+  height: 25px;
+  width: 25px;
+  color: #e6b106;
+  font-family: 'Satisfy', cursive;
+  font-weight: bolder;
+  margin-left: 150px;
+  font-size: 70px;
+  margin-top: 0px;
+}
+span {
+  color: black;
+  margin-top: 1px;
+}
+footer {
+  background-color: black;
+  height: 310px;
+  position: relative;
+  top: 750px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.col1 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.671);
+  left: 30%;
+}
+.col2 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.801);
+  left: 80%;
+}
+.col3 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.801);
+  left: 5%;
+}
+.col4 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.801);
+  left: 60%;
+}
+.col4 a {
+  color: rgba(255, 255, 255, 0.801);
+  text-decoration: none;
+}
+.col1 a {
+  color: rgba(255, 255, 255, 0.801);
+  text-decoration: none;
+}
+.col2 a {
+  color: rgba(255, 255, 255, 0.801);
+  text-decoration: none;
+}
+.col3 a {
+  color: rgba(255, 255, 255, 0.801);
+  text-decoration: none;
+}
+
+.hr2 {
+  position: absolute;
+  height: 0.1px;
+  opacity: 70%;
+  background-color: rgba(255, 255, 255, 0.801);
+  width: 600px;
+  top: 75%;
+  left: 28%;
+}
+.copy {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  color: rgba(255, 255, 255, 0.801);
+}
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 15px;
+  font-weight: 200;
+  opacity: 70%;
+}
+.paragraph {
+  margin-top: 7%;
+  height: 125px;
+  width: 100%;
+  background-color: #f3f5f7;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+}
+.p2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+.icon {
+  font-size: 30px;
+  color: #e6b106;
+  margin-top: 1%;
+  margin-left: 50%;
+  animation-name: arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes arrow {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translate3d(5px);
+  }
+}
+.form {
+  position: absolute;
+  background-color: white;
+  height: 550px;
+  width: 750px;
+  top: 80%;
+  left: 23%;
+  margin-bottom: 100px;
+  border: black 1px solid;
+  border-radius: 20px;
+  box-shadow: #f3f5f7 15px 15px;
+}
+.rd {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 860px;
+  left: 45%;
+  font-size: 45px;
+}
+.type1 {
+  position: absolute;
+  top: 860px;
+  left: 49%;
+  color: #e6b106;
+  font-weight: bold;
+  font-size: 25px;
+}
+.type2 {
+  position: absolute;
+  top: 915px;
+  left: 49%;
+  color: #e6b106;
+  font-weight: bold;
+  font-size: 25px;
+}
+label {
+  color: black;
+  margin-left: 80px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form input {
+  width: 320px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid black;
+  box-shadow: #f3f5f7 4px 4px;
+  border-right: none;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+::placeholder {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 120px;
+  margin-left: 300px;
+  margin-bottom: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+  background-color: #f3f5f7;
+}
+
+select {
+  width: 325px;
+  height: 28px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: black;
+  box-shadow: #f3f5f7 4px 4px;
+  margin-left: 60px;
+  margin-top: 40px;
+  text-align: center;
+}
+.third input {
+  text-align: center;
+}
+.first {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.second {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.third {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.fourth {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.fifth {
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.fourth input {
+  margin-left: 77px;
+}
+
+@media (max-width: 700px) {
+  .navs ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 3px 12px;
+    transition: 1s;
+    font-weight: bold;
+  }
+
+  .navs ul li a {
+    font-size: 15px;
+  }
+  .navs ul li a .fas {
+    font-size: 25px;
+  }
+  .paragraph {
+    font-size: 19px;
+  }
+  .p2 {
+    font-size: 23px;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .form {
+    height: 700px;
+    width: 450px;
+    position: relative;
+    left: 130px;
+    top: 60px;
+  }
+  .rd {
+    height: 40px;
+    width: 40px;
+    top: 880px;
+    left: 45%;
+    font-size: 35px;
+  }
+  .type1 {
+    top: 875px;
+    left: 49%;
+    font-size: 20px;
+  }
+  .type2 {
+    top: 925px;
+    left: 49%;
+    font-size: 20px;
+  }
+  label {
+    font-size: 18px;
+    margin-left: 60px;
+  }
+  .form input {
+    width: 300px;
+    font-size: 13px;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  select {
+    width: 200px;
+    height: 28px;
+  }
+
+  .btn {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+    top: 40px;
+    right: 120px;
+  }
+
+  footer {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    top: 300px;
+  }
+  .hr2 {
+    width: 300px;
+    left: 25%;
+  }
+  .copy {
+    font-size: 10px;
+    left: 35%;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 10px;
+    font-weight: 200;
+    opacity: 70%;
+  }
+  .col1 {
+    left: 25%;
+  }
+  .col2 {
+    left: 75%;
+  }
+  .col3 {
+    left: 2%;
+  }
+  .col4 {
+    left: 50%;
+  }
+  .logo {
+    height: 25px;
+    width: 25px;
+    margin-left: 10%;
+    font-size: 55px;
+  }
+}
+@media (max-width: 500px) {
+  .navs ul li a {
+    font-size: 10px;
+  }
+  .navs ul li a .fas {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .p2 {
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .form {
+    height: 600px;
+    width: 380px;
+    left: 10%;
+    top: 50px;
+  }
+  .rd {
+    height: 30px;
+    width: 30px;
+    top: 820px;
+    left: 45%;
+    font-size: 30px;
+  }
+  .type1 {
+    top: 800px;
+    left: 50%;
+    font-size: 20px;
+  }
+  .type2 {
+    top: 850px;
+    left: 50%;
+    font-size: 20px;
+  }
+  label {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  .form input {
+    width: 200px;
+    font-size: 13px;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+  select {
+    width: 200px;
+    height: 28px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+    right: 160px;
+  }
+
+  footer {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    top: 800px;
+  }
+  .hr2 {
+    width: 250px;
+    left: 25%;
+  }
+  .copy {
+    font-size: 10px;
+    left: 35%;
+  }
+  h3 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 13px;
+    font-weight: 200;
+    opacity: 70%;
+  }
+  .col1 {
+    left: 20%;
+  }
+  .col2 {
+    left: 70%;
+  }
+  .col3 {
+    left: 2%;
+  }
+  .col4 {
+    left: 45%;
+  }
+  .logo {
+    height: 20px;
+    width: 20px;
+    margin-left: 7%;
+    font-size: 50px;
+  }
+}
